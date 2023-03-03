@@ -70,11 +70,26 @@
     cursor: pointer;
     margin-bottom: 50px;
     border-radius: 7px;
+    position: relative;
 }
 
 .service .serv-content .card .box {
     padding: 0 5px;
 }
+
+.service .serv-content .card .box.correction-box:before {
+    content: "Need To be Correction.Revised words are marked in green. ";
+    color: lime;
+    position: absolute;
+    font-size: 12px;
+    width: 350px;
+    top: 16px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .service .serv-content .card .box p {
     letter-spacing: 1px;
@@ -112,6 +127,13 @@
     color: crimson;
     font-weight: 600;
 }
+
+.service .serv-content .card .box span.correction {
+    color: #00ff4c;
+    background-color: #222
+}
+
+
 
 
 .footer {
